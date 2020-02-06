@@ -26,7 +26,8 @@ while row < src.length
   element = 0 
   while element < src[row].length 
       highest_num = src[row][0]
-      if src[row][element] >= highest_num
+      current_num = src[row][element]
+      if current_num >= highest_num
         highest_num = src[row][element]
       end 
       new_array << highest_num
