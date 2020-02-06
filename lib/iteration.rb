@@ -25,10 +25,11 @@ new_array = []
 while row < src.length 
   element = 0 
   while element < src[row].length 
-      if src[row][element] >= src[row][element+1]
-        new_array << src[row][element]
+      highest_num = src[row][0]
+      if src[row][element] >= highest_num
+        new_array << highest_num
       else 
-        new_array << src[row][element+1]
+        new_array << highest_num
       end 
   break 
   end
