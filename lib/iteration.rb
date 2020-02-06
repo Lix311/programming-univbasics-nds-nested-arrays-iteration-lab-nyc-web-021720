@@ -54,6 +54,8 @@ while row < src.length
   sum = 0 
   while element < src[row].length 
       current_num = src[row][element]
+      next_num = src[row][element+1]
+        if (current_num % 2 == 0) 
       sum += current_num
       element += 1 
   end
