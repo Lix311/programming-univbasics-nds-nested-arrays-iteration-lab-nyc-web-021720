@@ -56,8 +56,10 @@ while row < src.length
       current_num = src[row][element]
       next_num = src[row][element+1]
         if (current_num % 2 == 0) && (next_num % 2 == 0)
-      sum += current_num
-      element += 1 
+          sum += current_num
+        end  
+          
+      element += 2  
   end
 new_array << sum 
 row += 1
