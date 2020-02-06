@@ -47,4 +47,21 @@ def total_even_pairs(src)
   # the number was even. Review the operator documentation if you've forgotten
   # this!
   
-end
+  row = 0 
+new_array = []
+while row < src.length 
+  element = 0 
+  while element < src[row].length 
+      highest_num = src[row][0]
+      current_num = src[row][element]
+      if current_num >= highest_num
+        highest_num = src[row][element]
+      end 
+  element += 1 
+  end
+new_array << highest_num
+row += 1
+end 
+return new_array
+end 
+
