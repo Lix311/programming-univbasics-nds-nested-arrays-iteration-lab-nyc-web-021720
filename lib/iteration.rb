@@ -29,10 +29,10 @@ while row < src.length
       current_num = src[row][element]
       if current_num >= highest_num
         highest_num = src[row][element]
-        new_array << highest_num
       end 
-    break 
+  element += 1 
   end
+new_array << highest_num
 row += 1
 end 
 return new_array
