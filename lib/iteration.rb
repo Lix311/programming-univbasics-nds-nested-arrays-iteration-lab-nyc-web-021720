@@ -48,7 +48,7 @@ def total_even_pairs(src)
   # this!
   
   row = 0 
-new_array = []
+total = []
 while row < src.length 
   element = 0 
   sum = 0 
@@ -58,12 +58,11 @@ while row < src.length
         if (current_num % 2 == 0) && (next_num % 2 == 0)
           sum += current_num
         end  
-          
-      element += 2  
+          break  
   end
-new_array << sum 
+total << sum 
 row += 1
 end 
-return new_array
+return total 
 end 
 
