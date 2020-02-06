@@ -63,6 +63,6 @@ while row < src.length
 total << sum 
 row += 1
 end 
-return total.sum() 
+return total 
 end 
 
