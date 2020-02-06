@@ -56,13 +56,13 @@ while row < src.length
       current_num = src[row][element]
       next_num = src[row][element+1]
         if (current_num % 2 == 0) && (next_num % 2 == 0)
-          sum += current_num
+          sum += current_num + next_num
         end  
           break  
   end
 total << sum 
 row += 1
 end 
-return total 
+return total.sum()
 end 
 
