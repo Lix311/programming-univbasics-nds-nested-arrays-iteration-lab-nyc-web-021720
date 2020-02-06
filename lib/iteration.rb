@@ -27,11 +27,10 @@ while row < src.length
   while element < src[row].length 
       if src[row][element] >= src[row][element+1]
         new_array << src[row][element]
-        break 
       else 
         new_array << src[row][element+1]
-        break 
       end 
+  break 
   end
 row += 1
 end 
