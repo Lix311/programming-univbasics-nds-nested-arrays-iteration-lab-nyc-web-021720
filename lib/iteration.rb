@@ -51,15 +51,13 @@ def total_even_pairs(src)
 new_array = []
 while row < src.length 
   element = 0 
+  sum = 0 
   while element < src[row].length 
-      highest_num = src[row][0]
       current_num = src[row][element]
-      if current_num >= highest_num
-        highest_num = src[row][element]
-      end 
-  element += 1 
+      sum += current_num
+      element += 1 
   end
-new_array << highest_num
+new_array << sum 
 row += 1
 end 
 return new_array
